@@ -10,17 +10,21 @@ nav{
 #menu > *{
     padding-left: 0.3em;
     padding-right: 0.3em;
-}
-
-
-#menu > li:first-child { /*Elemento inicio*/
-    display: block;
-    background: #ffff00;
-    padding: 0.3em; 
     margin: 0.1em;
 }
 
-#menu ul li:first-child{
+
+#menu > li:first-child { /*Botón inicio*/
+    display: block;
+    background: #ffff00;
+    padding: 0.3em; 
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+    width: auto;
+}
+
+#menu > ul > li:first-child{
     display: block;
     background: #333333;
     color: white;
@@ -31,8 +35,9 @@ nav{
 #menu ul :not(li:first-child){
     display: block;
     height: 0;
+    width: 0;
     overflow: hidden;
-    background: #999999;
+    background: #585858;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -43,8 +48,12 @@ nav{
     overflow: hidden;
     padding-top: 0.2em;
     padding-bottom: 0.1em;
-    
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
     transition: 0.3s height ease-in; 
+    color: white;
+    font-size: 0.9em;
 }
 
 

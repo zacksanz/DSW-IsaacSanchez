@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Flex Box y CSS Grid</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <!--Requerido para insertar  el feed de facebook-->
+        <div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0&appId=108810973126&autoLogAppEvents=1" nonce="6VFiwGJc"></script>
+        <!-- Fin requerido -->
+
+        <header>
+            <h1>Flex Box, CSS Grid</h1>
+        </header>
+        <nav id="barramenu">
+            <ul id="menu">
+                <li>Inicio</li>
+                <ul>
+                    <li>Temas</li>
+                    <li><a href="cssgrid.html">CSS Grid</a></li>
+                    <li><a href="flexbox.html">Flex box</a></li>
+                </ul>
+                <ul>
+                    <li>Recursos digitales</li>
+                    <li>Recurso 1</li>
+                    <li>Recurso 2</li>
+                </ul>
+                <ul>
+                    <li>Aprendizaje</li>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+                <ul>    
+                    <li>Acerca de</li>
+                    <li>Autor</li>
+                </ul>
+
+            </ul>
+        </nav>
+        <aside>
+            <div class="fb-page" data-href="https://www.facebook.com/UniversidadUNAD" data-tabs="timeline" data-width="300" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/UniversidadUNAD" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UniversidadUNAD">Universidad Nacional Abierta y a Distancia - UNAD Colombia</a></blockquote></div>
+        </aside>
+
+        <footer>
+            Creado por: Isaac Sánchez <a href="mailto:igsanchezm@unadvirtual.edu.co">Enviar correo al autor del sitio</a>
+        </footer>
+
+        <div id="contenedorPrincipal">
+
+            <article>
+                <h2>CSS Grid</h2>
+                <p>
+                    En este modelo de diseño obtenemos una retícula o rejilla bidimensional (a diferencia del flex box)
+                    en la que podemos distribuir los elementos contenidos que hacen parte del diseño.
+                </p>
+
+                <figure>
+                    <img src="imagenes/grid-numbering.png" width="600">
+                </figure>
+
+                <p>
+                    Las propiedades más importantes a tener en cuenta para configurar correctamente un <b>contenedor</b>
+                    grid son:
+                </p>
+
+                <ul>
+                    <li>
+                        <code>grid-template-rows</code>:
+                        Establece la distancia vertical entre cada una de las líneas que delimitan las filas.
+                        Los valores descritos se separan por un espacio en blanco. Ejemplo: <br>
+                        <code>grid-template-columns: auto 12px 13mm 15cm 3em</code>
+
+                    </li>
+                    <li>
+                        <code>grid-template-columns</code>:
+                        Establece la distancia horizontal entre cada una de las líneas que delimitan las columnas.
+                        Ejemplo:<br> <code>grid-template-columns: auto 12px 13mm 15cm 3em</code>
+                    </li>
+                    <li>
+                        <code>grid-gap</code>, <code>grid-row-gap</code> y <code>grid-column-gap</code>
+                        Establece el espacio entre las filas y/o columnas.
+                    </li>
+                </ul>
+
+            </article>
+            
+            <section>
+                <h2>Bibliografía</h2>
+                <ul>
+                    <li>House, C. (2021). A Complete Guide to Grid. CSS-Tricks. Recuperado de: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a> </li>
+                    <li>W3schools.com. (s.f.). Grid Layout. Recuperado de <a href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a> </li>
+                </ul>
+            </section>
+            
+        </div>
+    </body>
+</html>
