@@ -61,7 +61,7 @@ nav{
 body{
     display: grid;
     grid-template-rows: 4em 3em auto;
-    grid-template-column: 70% 30%;
+    grid-template-columns: 70% 30%;
 }
 
 header{
@@ -126,4 +126,29 @@ body{
 
 header{
     background: gray;
+}
+
+article figure{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+article figcaption{
+    margin-top: 1em;
+}
+
+body > header{
+    font-size: 1.2em;
+    margin-top: -0.3em;
+}
+
+#datos-contacto{
+    display: flex;
+    align-items: center;
+}
+
+#datos-contacto img{
+    width: 12em;
+    height: auto;
+    padding: 3em;
 }
